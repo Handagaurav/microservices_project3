@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: gauravhandadocker/simple-reverse-proxy 
+  backend_user:
+    build:
+      context: ../../udacity-restapi-user
+    image: gauravhandadocker/user
+  backend_feed:
+    build:
+      context: ../../udacity-restapi-feed  
+    image: gauravhandadocker/feed
+  frontend:
+    build:
+      context: ../../udacity-c3-frontend  
+    image: gauravhandadocker/frontend
