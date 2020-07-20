@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: reverseproxy
+  namespace: simple-reverse-proxy
+spec:
+  containers:
+    - name: reverseproxy
+      image: sprabhulkar/simple-reverse-proxy:latest
+  imagePullSecrets:
+    - name: registry-secret
