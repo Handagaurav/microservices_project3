@@ -6,6 +6,6 @@ metadata:
 spec:
   containers:
     - name: reverseproxy
-      image: sprabhulkar/simple-reverse-proxy:latest
+      image: gauravhandadocker/simple-reverse-proxy:latest
   imagePullSecrets:
     - name: registry-secret
